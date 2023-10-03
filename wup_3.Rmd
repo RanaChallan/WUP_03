@@ -17,6 +17,13 @@ davisdata <- read.csv(file="UCDavis.csv")
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
+#Method
+
+```{r eval=FALSE}
+davisdata <- davisdata %>%
+mutate(across(where(is.character), as.factor))
+```
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
