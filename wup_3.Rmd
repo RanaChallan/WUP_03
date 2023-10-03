@@ -24,6 +24,9 @@ davisdata <- davisdata %>%
 mutate(across(where(is.character), as.factor))
 ```
 
+We have changed all the character variables to factor variables.The type of this problem needs a numerical variable called WORDSUM and a factor variable called RACE. We will be using different helper files to help us complete the analysis of Numerical and factorial variables. 
+
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
